@@ -85,8 +85,7 @@ a{
 .simple-result{
     width: 625px;
     height: 150px;
-    border: 1px solid green;
-    margin: 25px auto;
+    margin: 10px auto;
 }
 
 .simple-result div{
@@ -106,37 +105,76 @@ a{
     line-height: 25px;
 }
 
+.simple-padding{
+    padding: 10px;
+}
+
 .videos-result{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 625px;
     height: 300px;
-    border: 1px solid violet;
-    margin: 25px auto;
+    margin: 20px auto;
 }
 .video{
-    border: 1px solid firebrick;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 15px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.video-thumbnail{
+    height: 40%;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.video-thumbnail img{
+    border-radius: 15px;
+}
+.video-description{
+    height: 40%;
+}
+.video-info{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 12px;
 }
 
 .ask-result{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     width: 625px;
     height: 200px;
-    border: 1px solid teal;
-    margin: 25px auto;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 15px;
+    margin: 20px auto;
 }
 .people-also-ask{
-    border: 1px solid violet;
+    flex-grow: 1;
     width: 100%;
-    height: 25px;
+    height: 30px;
+    font-size: 19px;
+    padding: 5px;
 }
 .question-container{
     width: 100%;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
 }
+.question-container div{
+    height: 30px;
+    border-top: 1px solid rgb(207, 207, 207);
+    flex-grow: 1;
+    padding: 5px;
+}
+.question-container div:hover{
+    cursor: pointer;
+}
+
 
 
 
